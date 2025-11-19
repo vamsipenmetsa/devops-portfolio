@@ -100,22 +100,20 @@ document.addEventListener('DOMContentLoaded', () => {
       // Small delay to ensure DOM is ready
       setTimeout(() => executeCommand(command, targetId), 500);
     }
-  } else {
-    // Default to showing all sections or just the first one?
-    // For this design, it looks better if we just let them scroll or click.
-    // But let's make sure sections are visible if they are in viewport
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
   }
+
+  // Always set up the observer for scrolling animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
 
   // --- Terminal Date/Time in Footer (Optional) ---
   const footer = document.querySelector('footer p');
