@@ -15,5 +15,13 @@
         "postcss": "^8.4.24",
         "tailwindcss": "^3.3.2",
         "vite": "^4.3.9"
+    },
+    "dependencies": {
+        "aos": "^2.3.4",
+        "devicon": "^2.16.0",
+        "gsap": "^3.13.0",
+        "particles.js": "^2.0.0",
+        "typed.js": "^2.1.0",
+        "typewriter-effect": "^2.22.0"
     }
 }

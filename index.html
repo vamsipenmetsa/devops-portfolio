@@ -1,397 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vamsi Penmetsa | DevOps & SRE Professional</title>
+    <title>vamsi@portfolio:~$</title>
     <link rel="icon" type="image/jpeg" href="./public/vamsi-profile.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./src/style.css">
 </head>
+
 <body>
-    <div class="gradient-bg">
-        <div class="gradient-sphere"></div>
-        <div class="gradient-sphere secondary"></div>
-        <div class="gradient-sphere tertiary"></div>
-    </div>
-
-    <header class="site-header">
-        <div class="container">
-            <nav>
-                <div class="logo">VP</div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://vamsipenmetsa.medium.com/subscribe" target="_blank" class="newsletter-header-link">Subscribe</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section class="hero glass-effect pro-hero creative-hero">
-        <div class="container creative-hero-container">
-            <div class="hero-content creative-hero-content">
-                <div class="profile-container creative-profile">
-                    <div class="profile-image"></div>
-                    <div class="sketch sketch-profile-ring"></div> <!-- Sketch around profile -->
+    <div class="container px-4 py-8">
+        <div class="terminal-window">
+            <!-- Terminal Header -->
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <div class="terminal-btn btn-red"></div>
+                    <div class="terminal-btn btn-yellow"></div>
+                    <div class="terminal-btn btn-green"></div>
                 </div>
-                <div class="hero-text creative-hero-text">
-                    <div class="sketch sketch-underline"></div>
-                    <h1 class="pro-name">Vamsi Penmetsa</h1>
-                    <h2 class="pro-title">Lead DevOps Engineer</h2>
-                    <p class="pro-tagline">Empowering teams to build, automate, and scale cloud-native solutions.</p>
-                    <div class="sketch sketch-arrow"></div>
-                    <div class="contact-details">
-                        <p><i class="fas fa-map-marker-alt"></i> Warsaw Metropolitan Area, Warsaw, 00-441, Poland</p>
-                        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank">linkedin.com/in/vamsipenmetsa</a></p>
-                    </div>
-                    <p class="linkedin-community">
-                        Join <a href="https://www.linkedin.com/groups/13986647/" target="_blank" class="highlight-blue">my DevOps LinkedIn Group</a> (15k+ members) & connect with my <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank" class="highlight-accent">30k+ network</a>.
+                <div class="terminal-title">
+                    <i class="fas fa-home"></i> vamsi@portfolio: ~
+                </div>
+                <div class="w-16"></div> <!-- Spacer for centering -->
+            </div>
+
+            <!-- Terminal Body -->
+            <div class="terminal-body">
+                <!-- Hero / Intro Command -->
+                <div class="command-line">
+                    <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
+                        class="command">./welcome.sh</span>
+                </div>
+
+                <div class="mb-8 animate-fade-in">
+                    <h1 class="mb-2">Hello, I'm Vamsi Penmetsa</h1>
+                    <h2 class="text-xl text-dracula-purple border-none mt-0 mb-4">Lead DevOps Engineer & SRE</h2>
+                    <p class="text-dracula-fg max-w-2xl">
+                        <span class="text-dracula-pink">const</span> <span class="text-dracula-green">mission</span> =
+                        <span class="text-dracula-yellow">"Empowering teams to build, automate, and scale cloud-native
+                            solutions."</span>;
                     </p>
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn primary pro-btn">Get in Touch <div class="sketch sketch-button-swirl"></div></a>
-                        <a href="./public/Vamsi_Penmetsa_Resume.pdf" class="btn secondary pro-btn" download>Download Resume</a>
+                    <div class="flex gap-4 mt-4">
+                        <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/vamsipenmetsa" target="_blank"><i class="fab fa-github"></i>
+                            GitHub</a>
+                        <a href="mailto:contact@vamsipenmetsa.com"><i class="fas fa-envelope"></i> Email</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <main class="content">
-        <div class="container">
-            <section id="about" class="section glass-card">
-                <div class="section-header">
-                    <h2>About Me</h2>
-                    <div class="accent-line"></div>
-                    <div class="sketch sketch-header-doodle"></div> <!-- Sketch near header -->
+                <!-- Navigation Menu -->
+                <div class="command-line mt-8">
+                    <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span class="command">ls
+                        -la sections/</span>
                 </div>
-                <div class="card">
-                    <p>Vamsi is a dynamic DevOps professional with a stellar career path, transitioning from a Manual Tester to a <span class="highlight-yellow">Lead Systems Engineer at EPAM Systems</span>, boasting an impressive <span class="highlight-green">7 active Azure Certifications</span>. With extensive expertise in Azure DevOps, Azure Cloud, AKS, ARM templates, and Terraform for Infrastructure as Code (IAC), he leverages PowerShell and Python scripting to enhance system automation and efficiency.</p>
-                    
-                    <p>Vamsi has successfully transitioned through various roles—Automation Engineer and DevOps Engineer—mastering crucial practices such as <span class="highlight-blue">Site Reliability Engineering (SRE), Platform Engineering, and Cloud Engineering</span>. His client portfolio includes industry giants like IMF, WTW (Willis Towers Watson), Wolters Kluwer, Corteva Agrisciences, and UBS Swiss.</p>
-                    
-                    <p>Most recently, Vamsi served as Lead SRE on a prestigious project with IMF iData, managing Azure Cloud infrastructure. He has collaborated on-site with Microsoft for over two years on the Kaizala Social Media App, which serves 10 million users. Vamsi has developed migration plans for Switzerland's largest bank and built inventories for four applications from scratch.</p>
-                    
-                    <p>He excels in developing and automating processes for infrastructure recreation, configuring end-to-end Azure DevOps pipelines, and troubleshooting issues on both Windows and Linux systems. Proficient in Agile Methodology, he thrives in multicultural environments and distributed teams, making him an invaluable asset to any organization. Conducted 100+ Technical Interviews in Azure, DevOps and SRE Disciplines at EPAM Systems.</p>
-                    
-                    <div class="featured-project">
-                        <h3><i class="fas fa-star"></i> Featured Projects</h3>
-                        <div class="project-item">
-                            <h4>IMF iData</h4>
-                            <p>Lead SRE, managing complex Azure Cloud infrastructure</p>
-                        </div>
-                        <div class="project-item">
-                            <h4>Microsoft Kaizala</h4>
-                            <p>Collaborated on-site for 2+ years on social media app serving 10M+ users</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="education" class="section glass-card">
-                <div class="section-header">
-                    <h2>Education</h2>
-                    <div class="accent-line"></div>
-                    <div class="sketch sketch-header-doodle alt"></div> <!-- Sketch near header -->
-                </div>
-                <div class="card">
-                    <div class="education-item">
-                        <h3>Bachelor's Degree</h3>
-                        <h4>Vishnu Institute of Technology, Bhimavaram</h4>
-                        <p class="year">2019</p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="skills" class="section glass-card">
-                <div class="section-header">
-                    <h2>Skills & Languages</h2>
-                    <div class="accent-line"></div>
-                    <div class="sketch sketch-header-doodle"></div> <!-- Sketch near header -->
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                        <h3>Azure Cloud & DevOps</h3>
-                        <p>Expert-level implementation of Azure services, DevOps practices, and AKS</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-code"></i></div>
-                        <h3>Infrastructure as Code</h3>
-                        <p>Terraform and ARM templates for automated infrastructure provisioning</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-                        <h3>Automation Scripting</h3>
-                        <p>PowerShell and Python for system automation and workflow optimization</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
-                        <h3>DevOps Pipelines</h3>
-                        <p>End-to-end pipeline configuration for continuous integration and delivery</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-server"></i></div>
-                        <h3>System Troubleshooting</h3>
-                        <p>Advanced diagnostics and remediation for Windows and Linux systems</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-users-cog"></i></div>
-                        <h3>Agile Leadership</h3>
-                        <p>Leading distributed, multicultural teams using Agile methodology</p>
-                    </div>
-                </div>
-                
-                <div class="languages-section">
-                    <h3>Languages</h3>
-                    <div class="languages-grid">
-                        <div class="language-item">
-                            <h4>English</h4>
-                            <p>Level C1</p>
-                        </div>
-                        <div class="language-item">
-                            <h4>Telugu</h4>
-                            <p>Native</p>
-                        </div>
-                        <div class="language-item">
-                            <h4>Hindi</h4>
-                            <p>Proficient</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="achievement-banner">
-                    <div class="achievement-icon"><i class="fas fa-award"></i></div>
-                    <p>Conducted <span class="highlight-accent">over 100 technical interviews</span> in Azure, DevOps and SRE disciplines at EPAM Systems</p>
-                </div>
-            </section>
-            
-            <section id="certifications" class="section glass-card">
-                <div class="section-header">
-                    <h2>Professional Certifications</h2>
-                    <div class="accent-line"></div>
-                    <div class="sketch sketch-header-doodle alt"></div> <!-- Sketch near header -->
-                </div>
-                <div class="certifications-grid">
-                    <div class="certification-card">
-                        <div class="certification-icon"><i class="fab fa-microsoft"></i></div>
-                        <h3>Microsoft Certified: DevOps Engineer Expert</h3>
-                    </div>
-                    <div class="certification-card">
-                        <div class="certification-icon"><i class="fab fa-microsoft"></i></div>
-                        <h3>Microsoft Certified: Azure Administrator Associate</h3>
-                    </div>
-                    <div class="certification-card">
-                        <div class="certification-icon"><i class="fab fa-microsoft"></i></div>
-                        <h3>Microsoft Certified: Azure Security Engineer Associate</h3>
-                    </div>
-                    <div class="certification-card">
-                        <div class="certification-icon"><i class="fas fa-certificate"></i></div>
-                        <h3>HashiCorp Certified Terraform Associate</h3>
-                    </div>
-                    <div class="certification-card">
-                        <div class="certification-icon"><i class="fab fa-microsoft"></i></div>
-                        <h3>Microsoft Certified: Azure Solutions Architect Expert</h3>
-                    </div>
-                </div>
-            </section>
 
-            <section id="experience" class="section glass-card">
-                <div class="section-header">
-                    <h2>Professional Experience</h2>
-                    <div class="accent-line"></div>
-                    <div class="sketch sketch-header-doodle"></div> <!-- Sketch near header -->
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Lead Systems Engineer</h3>
-                            <h4>EPAM Systems</h4>
-                            <p class="timeline-date">April 2023 - Present</p>
-                            <ul class="experience-list">
-                                <li>Successfully migrated Azure DevOps Build Agents from static VMs to VMSS spot instances, utilizing Packer for image building and Puppet for configuration management for Willis Towers Watson</li>
-                                <li>Optimized CI/CD pipelines for client systems, consistently delivering results within the expected timeframe</li>
-                                <li>Solved critical pipeline agent IIS Hardening issues by finding the root cause</li>
-                                <li>Led Site Reliability Engineering at IMF iData, driving system reliability and observability through Azure and ITIL v4 frameworks</li>
-                                <li>Pioneered automation initiatives, optimizing incident responses and enhancing fault detection via in-depth postmortem analyses</li>
-                                <li>Spearheaded technical recovery during major incidents, effectively managing post-incident resources</li>
-                                <li>Improved on-call response processes while mentoring junior engineers on industry best practices</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>EPAM Poland Ambassador</h3>
-                            <h4>EPAM Systems</h4>
-                            <p class="timeline-date">January 2023 - April 2023</p>
-                            <ul class="experience-list">
-                                <li>Selected as Epam Poland Ambassador club member</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Senior Systems Engineer</h3>
-                            <h4>EPAM Systems</h4>
-                            <p class="timeline-date">August 2022 - March 2023</p>
-                            <ul class="experience-list">
-                                <li>As Cloud DevOps Lead, implemented end-to-end PAAS infrastructure for Corteva's Salesportal on Azure using ARM, Bicep templates and Azure DevOps YAML pipelines</li>
-                                <li>Led a DevOps team to initiate and deliver the project Infrastructure within three months, exceeding client expectations</li>
-                                <li>As a Senior DevOps Engineer at UBS Switzerland, executed migration of legacy applications to Azure Cloud with minimal downtime</li>
-                                <li>Utilized Terraform and ARM templates for swift deployment in Azure Cloud environments</li>
-                                <li>Handled access-related issues, contributing to team efficiency and collaboration</li>
-                                <li>Applied Maven for application building, aiding inventory creation and risk reduction in migration planning</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Systems Engineer</h3>
-                            <h4>EPAM Systems</h4>
-                            <p class="timeline-date">April 2022 - July 2022</p>
-                            <ul class="experience-list">
-                                <li>Automated channel creation in Octopus Deploy CD with Power Shell and Azure DevOps CI</li>
-                                <li>Enhanced deployment management using Octopus Deploy's RESTful API</li>
-                                <li>Managed Kubernetes pods, used Terraform for cloud infrastructure</li>
-                                <li>Integrated Octopus Deploy CD test results into Azure DevOps CI for effective reporting</li>
-                                <li>Efficiently managed 20+ PBIs, resolved 30+ support tickets demonstrating high productivity</li>
-                                <li>Implemented the KICS analyzer using Docker to scan Terraform manifests, improving code quality and security</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Digital Marketing & Automation Engineer</h3>
-                            <h4>ITVersity, Inc.</h4>
-                            <p class="timeline-date">December 2020 - March 2022</p>
-                            <ul class="experience-list">
-                                <li>Managed Itversity's YouTube channel with 55K+ subscribers and social media platforms with 15K+ followers</li>
-                                <li>Led the team to create the Linux systems blogs on Medium</li>
-                                <li>Used YouTube API and Python for efficient bulk upload of video metadata</li>
-                                <li>Served as Itversity's social media strategist, planning and executing effective digital marketing campaigns</li>
-                                <li>Aided in managing and automating digital media content, along with creating digital illustrations</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Systems Engineer</h3>
-                            <h4>Tata Consultancy Services</h4>
-                            <p class="timeline-date">August 2021 - January 2022</p>
-                            <ul class="experience-list">
-                                <li>Managed and deployed Microsoft Kaizala's Alpha, Pre-Prod, and Prod release pipelines ensuring seamless app delivery</li>
-                                <li>Enhanced efficiency and automation working on CI/CD pipelines for portal and mobile app using Python, PowerShell, and YAML scripts</li>
-                                <li>Migrated APK data and build pipeline from on-premise servers to Azure Cloud using Python, boosting scalability and reliability</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Systems Engineer</h3>
-                            <h4>Tata Consultancy Services</h4>
-                            <p class="timeline-date">April 2020 - July 2021</p>
-                            <ul class="experience-list">
-                                <li>Transitioned from manual to Python-automated testing, improving coverage and speed</li>
-                                <li>Utilized Azure SQL Database, Azure DevOps, Agile methodology, Git, Android Studio, and Appium with Python for mobile app automation</li>
-                                <li>Enhanced data quality and accuracy through cleaning telemetry logs from the Azure SQL Database</li>
-                                <li>Implemented Appium with Python for test automation, improving test reliability and maintainability</li>
-                                <li>Reduced daily OCV process effort from 2.5 hours to 30 minutes using VBA script and macros</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Associate Systems Engineer</h3>
-                            <h4>Tata Consultancy Services</h4>
-                            <p class="timeline-date">June 2019 - January 2020</p>
-                            <ul class="experience-list">
-                                <li>Participated in McD BANCS Implementation for Lloyds Banking Group, contributing to mutual funds website development</li>
-                                <li>Utilized Core Java, JavaScript, SQL, JBoss Application Server, and Jenkins for optimal performance and security</li>
-                                <li>Gained corporate experience, proficient in Agile and Lean framework</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Software Engineer Intern</h3>
-                            <h4>ITVersity, Inc</h4>
-                            <p class="timeline-date">May 2018 - July 2018</p>
-                            <ul class="experience-list">
-                                <li>Served as a MERN Stack Developer at ITVersity, additionally contributed to editing YouTube content</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="container creative-newsletter-container">
-            <div class="newsletter-cta fancy-newsletter pro-newsletter creative-newsletter">
-                <h3 class="newsletter-title">Stay Updated!<span class="scribble-accent"></span></h3>
-                <p class="newsletter-desc">Insights on DevOps, SRE, and Cloud. No spam, just value.</p>
-                <a href="https://vamsipenmetsa.medium.com/subscribe" target="_blank" class="btn primary newsletter-btn pro-btn creative-newsletter-btn">Subscribe <span class="scribble-btn"></span></a>
-            </div>
-        </div>
-    </main>
+                <nav class="nav-menu">
+                    <a href="#about" class="nav-item" data-cmd="cat about.md">about.md</a>
+                    <a href="#experience" class="nav-item" data-cmd="./show-experience.sh">experience.sh</a>
+                    <a href="#skills" class="nav-item" data-cmd="grep -r 'skills' .">skills.json</a>
+                    <a href="#certifications" class="nav-item" data-cmd="ls -l certs/">certifications/</a>
+                    <a href="#contact" class="nav-item" data-cmd="ping contact">contact</a>
+                    <a href="./public/Vamsi_Penmetsa_Resume.pdf" target="_blank" class="nav-item text-dracula-green"
+                        data-cmd="wget resume.pdf">resume.pdf</a>
+                </nav>
 
-    <footer id="contact">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h2 style="font-family: 'Caveat', cursive; font-size:2.2rem;">Connect With Me</h2>
-                    <p>I'm always open to discussing new projects, technologies, or opportunities.</p>
-                    <div class="contact-details-footer">
-                        <p><i class="fas fa-map-marker-alt"></i> Warsaw, Poland</p>
+                <!-- Dynamic Content Area -->
+                <div id="terminal-output">
+
+                    <!-- About Section -->
+                    <section id="about" class="section-output">
+                        <div class="command-line">
+                            <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
+                                class="command">cat about.md</span>
+                        </div>
+                        <div class="pl-4 border-l-2 border-dracula-comment">
+                            <p>
+                                <span class="text-dracula-pink">import</span> { <span
+                                    class="text-dracula-orange">LeadSystemsEngineer</span> } <span
+                                    class="text-dracula-pink">from</span> <span
+                                    class="text-dracula-yellow">'@epam/systems'</span>;
+                            </p>
+                            <p>
+                                I am a dynamic DevOps professional transitioning from Manual Testing to a <span
+                                    class="text-dracula-green">Lead Systems Engineer</span> at EPAM Systems.
+                                With <span class="text-dracula-orange">7 active Azure Certifications</span>, I
+                                specialize in:
+                            </p>
+                            <ul class="list-disc list-inside text-dracula-fg mb-4 ml-4">
+                                <li>Azure DevOps & Cloud</li>
+                                <li>Kubernetes (AKS)</li>
+                                <li>Infrastructure as Code (Terraform, ARM)</li>
+                                <li>Automation (PowerShell, Python)</li>
+                            </ul>
+                            <p>
+                                Currently serving as Lead SRE for <span class="text-dracula-cyan">IMF iData</span>,
+                                managing complex Azure infrastructure.
+                                Previously collaborated with Microsoft on the Kaizala app (10M+ users).
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Experience Section -->
+                    <section id="experience" class="section-output">
+                        <div class="command-line">
+                            <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
+                                class="command">./show-experience.sh</span>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">April 2023 - Present</div>
+                            <h3 class="mt-0 text-lg">Lead Systems Engineer @ EPAM Systems</h3>
+                            <p class="text-sm text-dracula-comment mb-2"># Azure, Packer, Puppet, SRE</p>
+                            <ul class="list-disc list-inside text-sm text-dracula-fg">
+                                <li>Migrated Azure DevOps Build Agents to VMSS spot instances.</li>
+                                <li>Led SRE at IMF iData, driving reliability via Azure & ITIL v4.</li>
+                                <li>Solved critical pipeline IIS hardening issues.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">Aug 2022 - Mar 2023</div>
+                            <h3 class="mt-0 text-lg">Senior Systems Engineer @ EPAM Systems</h3>
+                            <p class="text-sm text-dracula-comment mb-2"># ARM, Bicep, Terraform, Azure DevOps</p>
+                            <ul class="list-disc list-inside text-sm text-dracula-fg">
+                                <li>Implemented PAAS infrastructure for Corteva using Bicep.</li>
+                                <li>Migrated legacy apps to Azure Cloud for UBS Switzerland.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">Apr 2022 - July 2022</div>
+                            <h3 class="mt-0 text-lg">Systems Engineer @ EPAM Systems</h3>
+                            <p class="text-sm text-dracula-comment mb-2"># Octopus Deploy, Kubernetes, Docker</p>
+                            <ul class="list-disc list-inside text-sm text-dracula-fg">
+                                <li>Automated channel creation in Octopus Deploy.</li>
+                                <li>Implemented KICS analyzer for Terraform security scanning.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">Dec 2020 - Mar 2022</div>
+                            <h3 class="mt-0 text-lg">Digital Marketing & Automation Engineer @ ITVersity</h3>
+                            <p class="text-sm text-dracula-comment mb-2"># Python, YouTube API, Social Media</p>
+                            <ul class="list-disc list-inside text-sm text-dracula-fg">
+                                <li>Managed YouTube channel (55K+ subs) and automated metadata uploads.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Skills Section -->
+                    <section id="skills" class="section-output">
+                        <div class="command-line">
+                            <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
+                                class="command">grep -r "skills" .</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <i class="fas fa-cloud"></i> Azure Cloud & DevOps
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <span class="skill-tag">Azure DevOps</span>
+                                    <span class="skill-tag">AKS</span>
+                                    <span class="skill-tag">CI/CD</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <i class="fas fa-code"></i> Infrastructure as Code
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <span class="skill-tag">Terraform</span>
+                                    <span class="skill-tag">ARM Templates</span>
+                                    <span class="skill-tag">Bicep</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <i class="fas fa-terminal"></i> Scripting
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <span class="skill-tag">PowerShell</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Bash</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <i class="fas fa-language"></i> Languages
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <span class="skill-tag">English (C1)</span>
+                                    <span class="skill-tag">Telugu (Native)</span>
+                                    <span class="skill-tag">Hindi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Certifications Section -->
+                    <section id="certifications" class="section-output">
+                        <div class="command-line">
+                            <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
+                                class="command">ls -l certs/</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="project-card flex items-center gap-4">
+                                <i class="fab fa-microsoft text-2xl text-dracula-cyan"></i>
+                                <div>
+                                    <h4 class="mb-0 text-base">DevOps Engineer Expert</h4>
+                                    <span class="text-xs text-dracula-comment">Microsoft Certified</span>
+                                </div>
+                            </div>
+                            <div class="project-card flex items-center gap-4">
+                                <i class="fab fa-microsoft text-2xl text-dracula-cyan"></i>
+                                <div>
+                                    <h4 class="mb-0 text-base">Azure Solutions Architect</h4>
+                                    <span class="text-xs text-dracula-comment">Microsoft Certified</span>
+                                </div>
+                            </div>
+                            <div class="project-card flex items-center gap-4">
+                                <i class="fab fa-microsoft text-2xl text-dracula-cyan"></i>
+                                <div>
+                                    <h4 class="mb-0 text-base">Azure Administrator</h4>
+                                    <span class="text-xs text-dracula-comment">Microsoft Certified</span>
+                                </div>
+                            </div>
+                            <div class="project-card flex items-center gap-4">
+                                <i class="fas fa-certificate text-2xl text-dracula-purple"></i>
+                                <div>
+                                    <h4 class="mb-0 text-base">Terraform Associate</h4>
+                                    <span class="text-xs text-dracula-comment">HashiCorp Certified</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contact Section -->
+                    <section id="contact" class="section-output">
+                        <div class="command-line">
+                            <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
+                                class="command">ping contact</span>
+                        </div>
+
+                        <div class="p-4 bg-dracula-current rounded">
+                            <p>PING contact (127.0.0.1): 56 data bytes</p>
+                            <p>64 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.042 ms</p>
+                            <p>--- contact ping statistics ---</p>
+                            <p class="mb-4">1 packets transmitted, 1 packets received, 0.0% packet loss</p>
+
+                            <div class="mt-4">
+                                <p>Connect with me:</p>
+                                <div class="flex flex-col gap-2">
+                                    <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank"
+                                        class="hover:text-dracula-green">-> linkedin.com/in/vamsipenmetsa</a>
+                                    <a href="https://github.com/vamsipenmetsa" target="_blank"
+                                        class="hover:text-dracula-green">-> github.com/vamsipenmetsa</a>
+                                    <a href="https://medium.com/@vamsipenmetsa" target="_blank"
+                                        class="hover:text-dracula-green">-> medium.com/@vamsipenmetsa</a>
+                                    <a href="https://x.com/vamsi_penmetsa" target="_blank"
+                                        class="hover:text-dracula-green">-> x.com/vamsi_penmetsa</a>
+                                </div>
+                                <p class="mt-4 text-dracula-comment">// Based in Warsaw, Poland</p>
+                            </div>
+                        </div>
+
+                        <footer
+                            class="mt-12 text-center text-dracula-comment text-sm border-t border-dracula-comment pt-4">
+                            <p>&copy; 2025 Vamsi Penmetsa. Built with <span class="text-dracula-red">&lt;3</span> and
+                                Terminal.</p>
+                        </footer>
+                    </section>
+
+                    <!-- Active Command Line (Bottom) -->
+                    <div class="command-line mt-12">
+                        <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
+                            class="cursor"></span>
                     </div>
                 </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/vamsipenmetsa" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://x.com/vamsi_penmetsa" target="_blank" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://medium.com/@vamsipenmetsa" target="_blank" class="social-link" aria-label="Medium"><i class="fab fa-medium-m"></i></a>
-                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Vamsi Penmetsa. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Newsletter Pop-up -->
-    <div class="newsletter-popup" id="newsletterPopup">
-        <div class="container popup-content">
-            <div class="popup-text">
-                <h3 style="font-family: 'Caveat', cursive; font-size:1.7rem; position:relative; display:inline-block;">Stay Updated!
-                    <span class="scribble-accent"></span>
-                </h3>
-                <p>Get insights on DevOps, SRE, and Cloud delivered to your inbox.</p>
-            </div>
-            <a href="https://vamsipenmetsa.medium.com/subscribe" target="_blank" class="btn primary newsletter-btn" style="font-family: 'Caveat', cursive; font-size:1.2rem; position:relative;">Subscribe <span class="scribble-btn"></span></a>
-            <button class="close-popup" id="closePopupBtn" aria-label="Close newsletter banner">&times;</button>
         </div>
     </div>
     <script type="module" src="./src/main.js"></script>
 </body>
+
 </html>
