@@ -1,136 +1,42 @@
 import './style.css'
 
 document.addEventListener('DOMContentLoaded', () => {
-  // --- Typing Effect for Hero Section ---
-  const heroText = "Hello, I'm Vamsi Penmetsa";
-  const heroElement = document.querySelector('h1');
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
 
-  if (heroElement) {
-    heroElement.textContent = '';
-    let i = 0;
-    const typeWriter = () => {
-      if (i < heroText.length) {
-        heroElement.textContent += heroText.charAt(i);
-        i++;
-        setTimeout(typeWriter, 100); // Typing speed
-      } else {
-        // Remove cursor from h1 after typing is done
-        heroElement.style.borderRight = 'none';
-      }
-    };
-    // Add cursor style initially
-    heroElement.style.borderRight = '2px solid #f8f8f2';
-    heroElement.style.display = 'inline-block';
-    setTimeout(typeWriter, 500);
-  }
-
-  // --- Command Line Navigation & Scroll Spy ---
-  const navItems = document.querySelectorAll('.nav-item');
-  const sections = document.querySelectorAll('.section-output');
-  const terminalOutput = document.getElementById('terminal-output');
-
-  // Function to "execute" a command
-  const executeCommand = (command, targetId) => {
-    // Update URL hash without scrolling (scrolling handled manually)
-    window.history.pushState(null, null, targetId);
-
-    // Highlight nav item
-    navItems.forEach(item => {
-      if (item.getAttribute('href') === targetId) {
-        item.classList.add('active');
-      } else {
-        item.classList.remove('active');
-      }
-    });
-
-    // Show section with animation
-    sections.forEach(section => {
-      if ('#' + section.id === targetId) {
-        section.classList.add('visible');
-        section.style.display = 'block';
-
-        // Scroll to section
+      if (targetElement) {
         const headerOffset = 100;
-        const elementPosition = section.getBoundingClientRect().top;
+        const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
         window.scrollTo({
           top: offsetPosition,
-          behavior: 'smooth'
+          behavior: "smooth"
         });
       }
     });
-  };
-
-  // Handle Nav Clicks
-  navItems.forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = item.getAttribute('href');
-      const command = item.getAttribute('data-cmd');
-      executeCommand(command, targetId);
-    });
   });
 
-  // Scroll Spy to update active command based on scroll position
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (pageYOffset >= (sectionTop - 200)) {
-        current = '#' + section.id;
-      }
+  // Mobile Menu Toggle
+  const menuBtn = document.querySelector('button.md\\:hidden');
+  const nav = document.querySelector('nav');
+
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', () => {
+      nav.classList.toggle('hidden');
+      nav.classList.toggle('flex');
+      nav.classList.toggle('flex-col');
+      nav.classList.toggle('absolute');
+      nav.classList.toggle('top-16');
+      nav.classList.toggle('left-0');
+      nav.classList.toggle('w-full');
+      nav.classList.toggle('bg-paper');
+      nav.classList.toggle('p-4');
+      nav.classList.toggle('shadow-sketch');
     });
-
-    navItems.forEach(item => {
-      item.classList.remove('active');
-      if (item.getAttribute('href') === current) {
-        item.classList.add('active');
-      }
-    });
-  });
-
-  // Initial check for hash in URL
-  if (window.location.hash) {
-    const targetId = window.location.hash;
-    const navItem = document.querySelector(`.nav-item[href="${targetId}"]`);
-    if (navItem) {
-      const command = navItem.getAttribute('data-cmd');
-      // Small delay to ensure DOM is ready
-      setTimeout(() => executeCommand(command, targetId), 500);
-    }
-  } else {
-    // Default to showing all sections or just the first one?
-    // For this design, it looks better if we just let them scroll or click.
-    // But let's make sure sections are visible if they are in viewport
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, { threshold: 0.1 });
-
-    sections.forEach(section => {
-      observer.observe(section);
-      // Fallback: make visible immediately to avoid blank screen issues
-      setTimeout(() => {
-        section.classList.add('visible');
-        section.style.opacity = '1';
-        section.style.transform = 'translateY(0)';
-      }, 1000);
-    });
-  }
-
-  // --- Terminal Date/Time in Footer (Optional) ---
-  const footer = document.querySelector('footer p');
-  if (footer) {
-    const now = new Date();
-    const timeString = now.toLocaleTimeString();
-    // Append last login time simulation
-    // footer.innerHTML += ` <br><span class="text-dracula-comment">Last login: ${timeString} on ttys000</span>`;
   }
 });

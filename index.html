@@ -4,401 +4,486 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vamsi@portfolio:~$</title>
+    <title>Who is Vamsi Penmetsa?</title>
     <link rel="icon" type="image/jpeg" href="./public/vamsi-profile.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
-    <div class="container px-4 py-8">
-        <div class="terminal-window">
-            <!-- Terminal Header -->
-            <div class="terminal-header">
-                <div class="terminal-buttons">
-                    <div class="terminal-btn btn-red"></div>
-                    <div class="terminal-btn btn-yellow"></div>
-                    <div class="terminal-btn btn-green"></div>
-                </div>
-                <div class="terminal-title">
-                    <i class="fas fa-home"></i> vamsi@portfolio: ~
-                </div>
-                <div class="w-16"></div> <!-- Spacer for centering -->
+    <div class="max-w-5xl mx-auto px-4 py-8 relative">
+        <!-- Header / Nav -->
+        <header
+            class="flex justify-between items-center mb-12 sticky top-0 bg-paper/90 backdrop-blur-sm z-50 py-4 border-b-2 border-pencil border-dashed">
+            <div class="text-3xl font-bold transform -rotate-2">
+                <span class="highlight-yellow">Vamsi's Notebook</span> ✏️
             </div>
+            <nav class="hidden md:flex gap-6">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button (Simple) -->
+            <button class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+        </header>
 
-            <!-- Terminal Body -->
-            <div class="terminal-body">
-                <!-- Hero / Intro Command -->
-                <div class="command-line">
-                    <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
-                        class="command">./welcome.sh</span>
+        <main>
+            <!-- Hero Section -->
+            <section class="mb-20 flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1">
+                    <div class="sketch-box p-8 bg-white transform rotate-1 relative">
+                        <!-- Language badges in corner -->
+                        <div class="absolute top-4 right-4 flex gap-2">
+                            <span class="text-xs bg-marker-green px-2 py-1 rounded-full border border-pencil">🗣️
+                                English</span>
+                            <span
+                                class="text-xs bg-marker-yellow px-2 py-1 rounded-full border border-pencil">తెలుగు</span>
+                        </div>
+
+                        <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-pencil">Vamsi
+                                Penmetsa</span> 👋</h1>
+                        <h2 class="text-2xl md:text-3xl text-pencil-light mb-4">
+                            <span class="highlight-yellow">Curious Human</span> | Lead DevOps Engineer
+                        </h2>
+                        <p class="text-xl mb-6 leading-relaxed">
+                            <span class="highlight-green">Deploying LLMs as a Service</span> on Azure AKS for
+                            <span class="font-bold">LSEG × Microsoft UK Partnership</span> 🇬🇧
+                        </p>
+                        <p class="text-lg mb-8 leading-relaxed">
+                            <span class="font-bold">EPAM AI Ambassador</span> ✨ |
+                            <span class="font-bold">M365 Copilot Champion</span> |
+                            <span class="highlight-pink">150+ Technical Interviews</span>
+                        </p>
+                        <div class="flex gap-4 flex-wrap">
+                            <a href="#resources" class="sketch-btn bg-marker-yellow hover:bg-yellow-300">Free Resources
+                                🎁</a>
+                            <a href="#contact" class="sketch-btn">Let's Talk!</a>
+                            <a href="Vamsi_Penmetsa_Resume.pdf" target="_blank"
+                                class="sketch-btn bg-marker-blue hover:bg-blue-200">View Resume</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-64 h-64 md:w-80 md:h-80 relative">
+                    <!-- Profile Image with Sketch Border -->
+                    <div
+                        class="absolute inset-0 border-4 border-pencil rounded-full transform translate-x-2 translate-y-2">
+                    </div>
+                    <img src="./public/vamsi-profile.jpg" alt="Vamsi Penmetsa"
+                        class="w-full h-full object-cover object-top rounded-full border-4 border-pencil bg-white relative z-10">
+                    <!-- Fun fact badge -->
+                    <div
+                        class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white border-2 border-pencil px-4 py-2 rounded-full shadow-sketch text-sm font-bold whitespace-nowrap">
+                        📍 Warsaw, Poland
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="mb-20">
+                <h2 class="section-title">About Me</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="sticky-note-pink transform -rotate-1">
+                        <p class="text-xl mb-4 font-bold">The Professional Side 👔</p>
+                        <p class="mb-4">
+                            I'm a <span class="font-bold">Lead DevOps Engineer</span> deploying <span
+                                class="highlight-yellow">Large Language Models (LLMs) as a service</span> on Azure AKS
+                            and PaaS for the <span class="font-bold">London Stock Exchange Group (LSEG)</span> and its
+                            UK financial clients.
+                        </p>
+                        <p class="mb-4">
+                            Part of the high-profile <span class="font-bold highlight-green">LSEG × Microsoft UK
+                                Partnership</span> 🤝
+                        </p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>7 Active Azure Certifications 🏆</li>
+                            <li>2 EPAM AI Certifications 🤖</li>
+                            <li>Microsoft M365 Copilot Champion ✨</li>
+                            <li>EPAM AI Ambassador 🎯</li>
+                        </ul>
+                    </div>
+                    <div class="sticky-note-blue transform rotate-1">
+                        <p class="text-xl mb-4 font-bold">The Journey 🌟</p>
+                        <p class="mb-4">
+                            Successfully navigated from <span class="highlight-pink">Manual Tester → Automation Engineer
+                                → DevOps → SRE → Platform Engineer → Cloud Engineer</span>
+                        </p>
+                        <p class="mb-4">
+                            Worked with industry leaders: <span class="font-bold">IMF, WTW, Wolters Kluwer, Corteva, UBS
+                                Swiss, Microsoft</span>
+                        </p>
+                        <p class="mb-4">
+                            Expertise in <span class="font-bold">Azure DevOps, AKS, SRE, Terraform, AI/ML
+                                infrastructure</span> with architecture design & team management using <span
+                                class="highlight-yellow">ITIL v4, Scrum, Agile</span>
+                        </p>
+                        <p class="text-sm text-pencil-light">
+                            🌍 Thriving in multicultural environments & distributed teams
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="mb-20">
+                <h2 class="section-title">My Journey</h2>
+                <div class="relative border-l-4 border-pencil ml-4 md:ml-8 space-y-12 pl-8 py-4">
+
+                    <!-- Job 1 -->
+                    <div class="relative">
+                        <div
+                            class="absolute -left-[42px] top-0 w-6 h-6 bg-marker-yellow border-2 border-pencil rounded-full">
+                        </div>
+                        <div class="sketch-box p-6">
+                            <span class="text-sm font-bold bg-pencil text-white px-2 py-1 rounded mb-2 inline-block">May
+                                2025 - Present</span>
+                            <h3 class="text-2xl font-bold">AI Ambassador & Copilot Champion</h3>
+                            <h4 class="text-lg text-pencil-light mb-2">@ EPAM Poland</h4>
+                            <p class="mb-2">Promoting Microsoft Copilot, conducting workshops, and driving AI adoption.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="text-xs border border-pencil px-2 py-1 rounded-full">AI</span>
+                                <span class="text-xs border border-pencil px-2 py-1 rounded-full">Workshops</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="relative">
+                        <div
+                            class="absolute -left-[42px] top-0 w-6 h-6 bg-marker-blue border-2 border-pencil rounded-full">
+                        </div>
+                        <div class="sketch-box p-6">
+                            <span class="text-sm font-bold bg-pencil text-white px-2 py-1 rounded mb-2 inline-block">Apr
+                                2023 - Present</span>
+                            <h3 class="text-2xl font-bold">Lead Systems Engineer</h3>
+                            <h4 class="text-lg text-pencil-light mb-2">@ EPAM Systems</h4>
+                            <p class="mb-3 font-bold text-lg">🚀 LLM Deployment for LSEG × Microsoft</p>
+                            <ul class="list-disc list-inside space-y-1 mb-3 text-sm">
+                                <li>Leading DevOps for LLM deployment on Azure AKS & PaaS</li>
+                                <li>Designing scalable infrastructure for model hosting</li>
+                                <li>Ensuring compliance & proactive stakeholder communication</li>
+                            </ul>
+                            <p class="mb-2 font-bold text-lg">🛡️ Lead SRE at IMF iData</p>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>Implemented Azure & ITIL v4 for reliability</li>
+                                <li>Pioneered automation for incident response</li>
+                                <li>Mentored junior engineers, improved on-call processes</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="text-xs border border-pencil px-2 py-1 rounded-full">Azure AKS</span>
+                                <span class="text-xs border border-pencil px-2 py-1 rounded-full">LLM</span>
+                                <span class="text-xs border border-pencil px-2 py-1 rounded-full">SRE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="relative">
+                        <div class="absolute -left-[42px] top-0 w-6 h-6 bg-white border-2 border-pencil rounded-full">
+                        </div>
+                        <div class="sketch-box p-6">
+                            <span class="text-sm font-bold bg-pencil text-white px-2 py-1 rounded mb-2 inline-block">Aug
+                                2022 - Mar 2023</span>
+                            <h3 class="text-2xl font-bold">Senior Systems Engineer</h3>
+                            <h4 class="text-lg text-pencil-light mb-2">@ EPAM Systems</h4>
+                            <p class="mb-2">PaaS infrastructure for Corteva. Cloud migration for UBS Switzerland.</p>
+                        </div>
+                    </div>
+
+                    <!-- Job 4 -->
+                    <div class="relative">
+                        <div class="absolute -left-[42px] top-0 w-6 h-6 bg-white border-2 border-pencil rounded-full">
+                        </div>
+                        <div class="sketch-box p-6">
+                            <span class="text-sm font-bold bg-pencil text-white px-2 py-1 rounded mb-2 inline-block">Apr
+                                2022 - July 2022</span>
+                            <h3 class="text-2xl font-bold">Systems Engineer</h3>
+                            <h4 class="text-lg text-pencil-light mb-2">@ EPAM Systems</h4>
+                            <p class="mb-2">Octopus Deploy automation, KICS security scanning, Kubernetes management.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Job 5 -->
+                    <div class="relative">
+                        <div class="absolute -left-[42px] top-0 w-6 h-6 bg-white border-2 border-pencil rounded-full">
+                        </div>
+                        <div class="sketch-box p-6">
+                            <span class="text-sm font-bold bg-pencil text-white px-2 py-1 rounded mb-2 inline-block">Dec
+                                2020 - Mar 2022</span>
+                            <h3 class="text-2xl font-bold">Digital Marketing & Automation</h3>
+                            <h4 class="text-lg text-pencil-light mb-2">@ ITVersity</h4>
+                            <p class="mb-2">Managed 55K+ sub YouTube channel. Python automation for metadata.</p>
+                        </div>
+                    </div>
+
+                    <!-- Job 6 -->
+                    <div class="relative">
+                        <div class="absolute -left-[42px] top-0 w-6 h-6 bg-white border-2 border-pencil rounded-full">
+                        </div>
+                        <div class="sketch-box p-6">
+                            <span class="text-sm font-bold bg-pencil text-white px-2 py-1 rounded mb-2 inline-block">Apr
+                                2020 - Jan 2022</span>
+                            <h3 class="text-2xl font-bold">Systems Engineer</h3>
+                            <h4 class="text-lg text-pencil-light mb-2">@ TCS</h4>
+                            <p class="mb-2">Microsoft Kaizala pipelines. Automation Engineer using Python & Appium.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="mb-20">
+                <h2 class="section-title">Skills & Tools</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Skill Group 1 -->
+                    <div class="sketch-box p-4 text-center transform rotate-1">
+                        <i class="fas fa-cloud text-3xl mb-2 text-pencil"></i>
+                        <h3 class="font-bold mb-2 highlight-blue inline-block">Cloud</h3>
+                        <ul class="text-sm space-y-1">
+                            <li>Azure</li>
+                            <li>AWS</li>
+                            <li>AKS</li>
+                        </ul>
+                    </div>
+                    <!-- Skill Group 2 -->
+                    <div class="sketch-box p-4 text-center transform -rotate-1">
+                        <i class="fas fa-code text-3xl mb-2 text-pencil"></i>
+                        <h3 class="font-bold mb-2 highlight-green inline-block">IaC</h3>
+                        <ul class="text-sm space-y-1">
+                            <li>Terraform</li>
+                            <li>Bicep</li>
+                            <li>ARM</li>
+                        </ul>
+                    </div>
+                    <!-- Skill Group 3 -->
+                    <div class="sketch-box p-4 text-center transform rotate-2">
+                        <i class="fas fa-terminal text-3xl mb-2 text-pencil"></i>
+                        <h3 class="font-bold mb-2 highlight-yellow inline-block">Scripting</h3>
+                        <ul class="text-sm space-y-1">
+                            <li>Python</li>
+                            <li>PowerShell</li>
+                            <li>Bash</li>
+                        </ul>
+                    </div>
+                    <!-- Skill Group 4 -->
+                    <div class="sketch-box p-4 text-center transform -rotate-2">
+                        <i class="fas fa-robot text-3xl mb-2 text-pencil"></i>
+                        <h3 class="font-bold mb-2 highlight-pink inline-block">AI/ML</h3>
+                        <ul class="text-sm space-y-1">
+                            <li>LLM Ops</li>
+                            <li>Copilot</li>
+                            <li>Capacity Planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications & Education -->
+            <section id="education" class="mb-20">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="section-title">Certifications</h2>
+                        <div class="space-y-3">
+                            <div class="sketch-box p-3 bg-white">
+                                <p class="font-bold mb-2">☁️ Azure (7 Active)</p>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                        <span>Solutions Architect Expert</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                        <span>DevOps Engineer Expert</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                        <span>Azure Administrator</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                        <span>AZ-900 Fundamentals</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sketch-box p-3 bg-white">
+                                <p class="font-bold mb-2">🤖 AI & Other</p>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                                        <span>2 EPAM AI Certifications</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                                        <span>Terraform Associate</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                                        <span>Engineering Management Essentials</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                                        <span>Complete SQL Bootcamp</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="section-title">Education</h2>
+                        <div class="sketch-box p-6 bg-white">
+                            <h3 class="text-xl font-bold">Vishnu Institute of Technology</h3>
+                            <p class="text-pencil-light">Bachelor's in Information Technology</p>
+                            <div class="mt-4 pt-4 border-t-2 border-dashed border-pencil">
+                                <p class="font-bold">🏆 Honors:</p>
+                                <p>On the Spot Award</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resources & Community Section (Highlighted) -->
+            <section id="resources" class="mb-20 relative">
+                <!-- Background Highlight for the whole section -->
+                <div
+                    class="absolute inset-0 bg-marker-yellow opacity-20 transform -skew-y-1 rounded-3xl -z-10 scale-105">
                 </div>
 
-                <div class="mb-8 animate-fade-in">
-                    <h1 class="mb-2">Hello, I'm Vamsi Penmetsa</h1>
-                    <h2 class="text-xl text-dracula-purple border-none mt-0 mb-4">Lead DevOps Engineer | M365 Copilot
-                        Champion | EPAM AI Ambassador</h2>
-                    <p class="text-dracula-fg max-w-2xl">
-                        <span class="text-dracula-pink">const</span> <span class="text-dracula-green">mission</span> =
-                        <span class="text-dracula-yellow">"Deploying LLMs & Architecting Cloud-Native
-                            Solutions."</span>;
+                <div class="text-center mb-10 relative group">
+                    <h2 class="section-title text-5xl transform -rotate-2 inline-block">🚀 Resources & Community</h2>
+                    <button
+                        onclick="navigator.clipboard.writeText(window.location.origin + window.location.pathname + '#resources'); alert('Link copied!');"
+                        class="absolute top-0 -right-12 opacity-0 group-hover:opacity-100 transition-opacity text-pencil hover:text-blue-600"
+                        title="Copy Link">
+                        <i class="fas fa-link text-xl"></i>
+                    </button>
+                    <p class="text-xl text-pencil mt-2 font-bold">Everything you need to grow!</p>
+                </div>
+
+                <!-- Free Products -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold mb-6"><span class="highlight-pink px-2">Free for first 100!</span> 🎁
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Product 1 -->
+                        <div class="sketch-box p-6 bg-white relative group border-4 border-marker-yellow">
+                            <div
+                                class="absolute -top-4 -right-4 bg-red-500 text-white font-bold px-4 py-1 transform rotate-12 shadow-lg border-2 border-white rounded-full animate-pulse">
+                                FREE</div>
+                            <h4 class="text-2xl font-bold mb-2">GitHub Copilot Visual Guide</h4>
+                            <p class="mb-4 text-lg">Prompting Made Simple. Master AI coding assistance.</p>
+                            <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank"
+                                class="sketch-btn w-full text-center block bg-marker-yellow hover:bg-yellow-300 text-xl">Get
+                                it Free ➔</a>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="sketch-box p-6 bg-white relative group border-4 border-marker-yellow">
+                            <div
+                                class="absolute -top-4 -right-4 bg-red-500 text-white font-bold px-4 py-1 transform -rotate-6 shadow-lg border-2 border-white rounded-full animate-pulse">
+                                FREE</div>
+                            <h4 class="text-2xl font-bold mb-2">Kubernetes Cheat Sheet</h4>
+                            <p class="mb-4 text-lg">Complete Pack: From Basics to Advanced K8s.</p>
+                            <a href="https://vamsipenmetsa.gumroad.com/l/knioda" target="_blank"
+                                class="sketch-btn w-full text-center block bg-marker-yellow hover:bg-yellow-300 text-xl">Get
+                                it Free ➔</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services & Community -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Interview Guidance -->
+                    <div class="sticky-note-blue transform rotate-1 relative border-2 border-pencil">
+                        <div
+                            class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-300 rounded-full shadow-inner border border-gray-400">
+                        </div> <!-- Pin -->
+                        <h3 class="text-2xl font-bold mb-4">1-on-1 Interview Guidance</h3>
+                        <p class="mb-4 text-lg">
+                            I've conducted <span class="font-bold highlight-pink px-1">150+ technical interviews</span>
+                            as a Lead DevOps Engineer.
+                        </p>
+                        <p class="mb-6 text-lg">
+                            Focused on <span class="font-bold">Cloud, DevOps, & SRE</span>. Let's crack your next
+                            interview!
+                        </p>
+                        <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank"
+                            class="block text-center bg-white border-2 border-pencil py-3 hover:bg-blue-50 transition-colors font-bold text-xl rounded shadow-sketch-hover">Book
+                            a Session 📅</a>
+                    </div>
+
+                    <!-- Communities -->
+                    <div class="space-y-6">
+                        <!-- LinkedIn Group -->
+                        <a href="https://linkedin.openinapp.co/groups-13986647" target="_blank"
+                            class="block sketch-box p-6 bg-white hover:bg-blue-50 transition-colors flex items-center gap-6 border-l-8 border-blue-600">
+                            <i class="fab fa-linkedin text-5xl text-blue-600"></i>
+                            <div>
+                                <h4 class="text-xl font-bold">LinkedIn DevOps Pros</h4>
+                                <p class="text-pencil-light font-bold">Join 15,000+ Professionals</p>
+                            </div>
+                        </a>
+
+                        <!-- Warsaw Community -->
+                        <a href="https://www.facebook.com/share/19y88wsYEC/?mibextid=wwXIfr" target="_blank"
+                            class="block sketch-box p-6 bg-white hover:bg-blue-50 transition-colors flex items-center gap-6 border-l-8 border-blue-600">
+                            <i class="fab fa-facebook text-5xl text-blue-600"></i>
+                            <div>
+                                <h4 class="text-xl font-bold">International Friends Warsaw</h4>
+                                <p class="text-pencil-light font-bold">Organizer of 1,000+ member club</p>
+                            </div>
+                        </a>
+
+                        <!-- CTA -->
+                        <a href="https://openinapp.link/aq10m" target="_blank"
+                            class="block sketch-box p-6 bg-marker-green hover:bg-green-400 transition-all transform hover:scale-105 flex items-center justify-center gap-3 font-bold text-2xl shadow-sketch-hover border-4 border-pencil">
+                            <i class="fas fa-comments"></i> Need Help? Let's Connect! ✅
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="mb-20 text-center">
+                <h2 class="section-title">Get in Touch!</h2>
+                <div class="sketch-box p-8 max-w-2xl mx-auto bg-white relative overflow-hidden">
+                    <!-- Stamp Effect -->
+                    <div
+                        class="absolute top-4 right-4 w-16 h-20 border-2 border-pencil flex items-center justify-center transform rotate-6 opacity-50">
+                        <span class="text-xs font-bold">POST</span>
+                    </div>
+
+                    <p class="text-xl mb-8">
+                        Interested in AI, DevOps, or just want to say hi? Drop me a message!
                     </p>
-                    <div class="flex gap-4 mt-4">
-                        <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank"><i
-                                class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/vamsipenmetsa" target="_blank"><i class="fab fa-github"></i>
-                            GitHub</a>
-                        <a href="mailto:vamsivarmapenmatsa@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+
+                    <div class="flex flex-wrap justify-center gap-6 text-lg">
+                        <a href="mailto:vamsivarmapenmatsa@gmail.com"
+                            class="flex items-center gap-2 hover:text-blue-600">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank"
+                            class="flex items-center gap-2 hover:text-blue-600">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/vamsipenmetsa" target="_blank"
+                            class="flex items-center gap-2 hover:text-blue-600">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://medium.com/@vamsipenmetsa" target="_blank"
+                            class="flex items-center gap-2 hover:text-blue-600">
+                            <i class="fab fa-medium"></i> Medium
+                        </a>
                     </div>
                 </div>
+            </section>
 
-                <!-- Navigation Menu -->
-                <div class="command-line mt-8">
-                    <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span class="command">ls
-                        -la sections/</span>
-                </div>
-
-                <nav class="nav-menu">
-                    <a href="#about" class="nav-item" data-cmd="cat about.md">about.md</a>
-                    <a href="#experience" class="nav-item" data-cmd="./show-experience.sh">experience.sh</a>
-                    <a href="#skills" class="nav-item" data-cmd="grep -r 'skills' .">skills.json</a>
-                    <a href="#certifications" class="nav-item" data-cmd="ls -l certs/">certifications/</a>
-                    <a href="#education" class="nav-item" data-cmd="cat education.txt">education.txt</a>
-                    <a href="#contact" class="nav-item" data-cmd="ping contact">contact</a>
-                    <a href="./public/Vamsi_Penmetsa_Resume.pdf" target="_blank" class="nav-item text-dracula-green"
-                        data-cmd="wget resume.pdf">resume.pdf</a>
-                </nav>
-
-                <!-- Dynamic Content Area -->
-                <div id="terminal-output">
-
-                    <!-- About Section -->
-                    <section id="about" class="section-output">
-                        <div class="command-line">
-                            <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
-                                class="command">cat about.md</span>
-                        </div>
-                        <div class="pl-4 border-l-2 border-dracula-comment">
-                            <p>
-                                <span class="text-dracula-pink">import</span> { <span
-                                    class="text-dracula-orange">LeadDevOpsEngineer</span>, <span
-                                    class="text-dracula-orange">AIAmbassador</span> } <span
-                                    class="text-dracula-pink">from</span> <span
-                                    class="text-dracula-yellow">'@epam/systems'</span>;
-                            </p>
-                            <p class="mt-2">
-                                Vamsi is a highly skilled <span class="text-dracula-green">Lead DevOps Engineer</span>
-                                currently deploying
-                                <span class="text-dracula-cyan">Large Language Models (LLMs)</span> as a service on
-                                Azure AKS and
-                                PaaS for the London Stock Exchange Group (LSEG) and its UK financial clients.
-                            </p>
-                            <p class="mt-2">
-                                <span class="text-dracula-pink">const</span> <span
-                                    class="text-dracula-orange">highlights</span> = [
-                                <span class="text-dracula-yellow">'7 Active Azure Certifications'</span>,
-                                <span class="text-dracula-yellow">'2 EPAM AI Certifications'</span>,
-                                <span class="text-dracula-yellow">'Microsoft Copilot Champion'</span>
-                                ];
-                            </p>
-                            <p class="mt-2">
-                                He thrives in multicultural environments, having worked with industry leaders like IMF,
-                                WTW, Wolters Kluwer, Corteva Agrisciences, UBS Swiss, and Microsoft.
-                            </p>
-                        </div>
-                    </section>
-
-                    <!-- Experience Section -->
-                    <section id="experience" class="section-output">
-                        <div class="command-line">
-                            <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
-                                class="command">./show-experience.sh</span>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">May 2025 - Present</div>
-                            <h3 class="mt-0 text-lg">AI Ambassador & Microsoft Co-Pilot Champion @ EPAM Poland</h3>
-                            <p class="text-sm text-dracula-comment mb-2"># AI, Copilot, Workshops, Demos</p>
-                            <ul class="list-disc list-inside text-sm text-dracula-fg">
-                                <li>Promoting Microsoft Copilot inside the company and to clients.</li>
-                                <li>Conducting demos, videos, articles, posts, and live workshops.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">April 2023 - Present</div>
-                            <h3 class="mt-0 text-lg">Lead Systems Engineer @ EPAM Systems</h3>
-                            <p class="text-sm text-dracula-comment mb-2"># Azure AKS, LLM, PaaS, SRE</p>
-                            <ul class="list-disc list-inside text-sm text-dracula-fg">
-                                <li>Leading DevOps for LLM deployment on Azure AKS and PaaS for LSEG.</li>
-                                <li>Designing scalable infrastructure for model hosting, ensuring compliance.</li>
-                                <li>Lead SRE at IMF iData product: Implemented Azure, ITIL v4 for reliability.</li>
-                                <li>Pioneered automation for incident response and fault detection.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Jan 2023 - Apr 2023</div>
-                            <h3 class="mt-0 text-lg">EPAM Poland Ambassador</h3>
-                            <p class="text-sm text-dracula-comment mb-2"># Personal Branding, Social Media</p>
-                            <ul class="list-disc list-inside text-sm text-dracula-fg">
-                                <li>Selected as EPAM Poland Ambassador club member to support personal branding.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Aug 2022 - Mar 2023</div>
-                            <h3 class="mt-0 text-lg">Senior Systems Engineer @ EPAM Systems</h3>
-                            <p class="text-sm text-dracula-comment mb-2"># Corteva, UBS, Terraform, Azure</p>
-                            <ul class="list-disc list-inside text-sm text-dracula-fg">
-                                <li>Implemented end-to-end PaaS infrastructure on Azure for Corteva's Salesportal.</li>
-                                <li>Executed migration of legacy applications to Azure Cloud for UBS Switzerland.</li>
-                                <li>Utilized Terraform and ARM templates for swift deployment.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Apr 2022 - July 2022</div>
-                            <h3 class="mt-0 text-lg">Systems Engineer @ EPAM Systems</h3>
-                            <p class="text-sm text-dracula-comment mb-2"># Wolters Kluwer, Octopus Deploy, KICS</p>
-                            <ul class="list-disc list-inside text-sm text-dracula-fg">
-                                <li>Automated channel creation in Octopus Deploy CD with PowerShell.</li>
-                                <li>Implemented KICS analyzer using Docker to scan Terraform manifests.</li>
-                                <li>Managed Kubernetes pods and used Terraform for cloud infrastructure.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Dec 2020 - Mar 2022</div>
-                            <h3 class="mt-0 text-lg">Digital Marketing & Automation Engineer @ ITVersity</h3>
-                            <p class="text-sm text-dracula-comment mb-2"># Python, YouTube API, Automation</p>
-                            <ul class="list-disc list-inside text-sm text-dracula-fg">
-                                <li>Managed YouTube channel (55K+ subs) and automated metadata uploads using Python.
-                                </li>
-                                <li>Automated processes, reducing manual efforts from days to minutes.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Aug 2021 - Jan 2022</div>
-                            <h3 class="mt-0 text-lg">Systems Engineer @ TCS</h3>
-                            <p class="text-sm text-dracula-comment mb-2"># Microsoft Kaizala, Azure DevOps</p>
-                            <ul class="list-disc list-inside text-sm text-dracula-fg">
-                                <li>Managed and deployed Microsoft Kaizala's Alpha, Pre-Prod, and Prod pipelines.</li>
-                                <li>Utilized Python, PowerShell, and YAML scripts for pipeline optimization.</li>
-                                <li>Migrated APK data and build pipeline from on-premise servers to Azure Cloud.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Apr 2020 - July 2021</div>
-                            <h3 class="mt-0 text-lg">Systems Engineer @ TCS</h3>
-                            <p class="text-sm text-dracula-comment mb-2"># Automation Engineer (Microsoft), Python,
-                                Azure SQL</p>
-                            <ul class="list-disc list-inside text-sm text-dracula-fg">
-                                <li>Transitioned from manual to Python-automated testing, improving coverage.</li>
-                                <li>Utilized Azure SQL, Azure DevOps, and Appium with Python for mobile app automation.
-                                </li>
-                                <li>Reduced daily OCV process effort from 2.5 hours to 30 minutes using VBA/Macros.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">June 2019 - Jan 2020</div>
-                            <h3 class="mt-0 text-lg">Associate Systems Engineer @ TCS</h3>
-                            <p class="text-sm text-dracula-comment mb-2"># Lloyds Banking Group, Java, SQL, Jenkins</p>
-                            <ul class="list-disc list-inside text-sm text-dracula-fg">
-                                <li>Participated in McD BaNCS Implementation for Lloyds Banking Group.</li>
-                                <li>Utilized Core Java, JavaScript, SQL, JBoss, and Jenkins for performance/security.
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">May 2018 - July 2018</div>
-                            <h3 class="mt-0 text-lg">Software Engineer Intern @ ITVersity</h3>
-                            <p class="text-sm text-dracula-comment mb-2"># MERN Stack, Web Development</p>
-                            <ul class="list-disc list-inside text-sm text-dracula-fg">
-                                <li>Served as a MERN Stack Developer and contributed to YouTube content editing.</li>
-                                <li>Developed responsive landing pages utilizing HTML, CSS, and Bootstrap4.</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <!-- Skills Section -->
-                    <section id="skills" class="section-output">
-                        <div class="command-line">
-                            <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
-                                class="command">grep -r "skills" .</span>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div class="project-card">
-                                <div class="project-header">
-                                    <i class="fas fa-robot"></i> AI & Cloud
-                                </div>
-                                <div class="flex flex-wrap">
-                                    <span class="skill-tag">Microsoft 365 Copilot</span>
-                                    <span class="skill-tag">LLM Deployment</span>
-                                    <span class="skill-tag">Azure AKS</span>
-                                    <span class="skill-tag">Capacity Planning</span>
-                                </div>
-                            </div>
-
-                            <div class="project-card">
-                                <div class="project-header">
-                                    <i class="fas fa-code"></i> Infrastructure & DevOps
-                                </div>
-                                <div class="flex flex-wrap">
-                                    <span class="skill-tag">Terraform</span>
-                                    <span class="skill-tag">ARM/Bicep</span>
-                                    <span class="skill-tag">Azure DevOps</span>
-                                    <span class="skill-tag">SRE</span>
-                                </div>
-                            </div>
-
-                            <div class="project-card">
-                                <div class="project-header">
-                                    <i class="fas fa-terminal"></i> Scripting & Tools
-                                </div>
-                                <div class="flex flex-wrap">
-                                    <span class="skill-tag">PowerShell</span>
-                                    <span class="skill-tag">Python</span>
-                                    <span class="skill-tag">Docker</span>
-                                    <span class="skill-tag">Kubernetes</span>
-                                </div>
-                            </div>
-
-                            <div class="project-card">
-                                <div class="project-header">
-                                    <i class="fas fa-language"></i> Languages
-                                </div>
-                                <div class="flex flex-wrap">
-                                    <span class="skill-tag">English (Full Professional)</span>
-                                    <span class="skill-tag">Telugu (Native)</span>
-                                    <span class="skill-tag">Hindi (Elementary)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Certifications Section -->
-                    <section id="certifications" class="section-output">
-                        <div class="command-line">
-                            <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
-                                class="command">ls -l certs/</span>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div class="project-card flex items-center gap-4">
-                                <i class="fab fa-microsoft text-2xl text-dracula-cyan"></i>
-                                <div>
-                                    <h4 class="mb-0 text-base">Azure Solutions Architect Expert</h4>
-                                    <span class="text-xs text-dracula-comment">Microsoft Certified</span>
-                                </div>
-                            </div>
-                            <div class="project-card flex items-center gap-4">
-                                <i class="fab fa-microsoft text-2xl text-dracula-cyan"></i>
-                                <div>
-                                    <h4 class="mb-0 text-base">DevOps Engineer Expert</h4>
-                                    <span class="text-xs text-dracula-comment">Microsoft Certified</span>
-                                </div>
-                            </div>
-                            <div class="project-card flex items-center gap-4">
-                                <i class="fab fa-microsoft text-2xl text-dracula-cyan"></i>
-                                <div>
-                                    <h4 class="mb-0 text-base">Azure Administrator</h4>
-                                    <span class="text-xs text-dracula-comment">Microsoft Certified</span>
-                                </div>
-                            </div>
-                            <div class="project-card flex items-center gap-4">
-                                <i class="fab fa-microsoft text-2xl text-dracula-cyan"></i>
-                                <div>
-                                    <h4 class="mb-0 text-base">Azure - Beginner's Guide + AZ-900</h4>
-                                    <span class="text-xs text-dracula-comment">Microsoft Certified</span>
-                                </div>
-                            </div>
-                            <div class="project-card flex items-center gap-4">
-                                <i class="fas fa-certificate text-2xl text-dracula-purple"></i>
-                                <div>
-                                    <h4 class="mb-0 text-base">Engineering Management Essentials</h4>
-                                    <span class="text-xs text-dracula-comment">Certification</span>
-                                </div>
-                            </div>
-                            <div class="project-card flex items-center gap-4">
-                                <i class="fas fa-database text-2xl text-dracula-orange"></i>
-                                <div>
-                                    <h4 class="mb-0 text-base">Complete SQL Bootcamp 2020</h4>
-                                    <span class="text-xs text-dracula-comment">Udemy</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Education Section -->
-                    <section id="education" class="section-output">
-                        <div class="command-line">
-                            <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
-                                class="command">cat education.txt</span>
-                        </div>
-                        <div class="pl-4 border-l-2 border-dracula-comment">
-                            <h3 class="text-lg text-dracula-purple mt-0">Vishnu Institute of Technology (Autonomous)
-                            </h3>
-                            <p class="text-dracula-fg">Bachelor's degree, Information Technology</p>
-
-                            <h4 class="text-base text-dracula-yellow mt-4 mb-2">Honors & Awards</h4>
-                            <ul class="list-disc list-inside text-dracula-fg">
-                                <li>On the Spot Award</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <!-- Contact Section -->
-                    <section id="contact" class="section-output">
-                        <div class="command-line">
-                            <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
-                                class="command">ping contact</span>
-                        </div>
-
-                        <div class="p-4 bg-dracula-current rounded">
-                            <p>PING contact (127.0.0.1): 56 data bytes</p>
-                            <p>64 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.042 ms</p>
-                            <p>--- contact ping statistics ---</p>
-                            <p class="mb-4">1 packets transmitted, 1 packets received, 0.0% packet loss</p>
-
-                            <div class="mt-4">
-                                <p>Connect with me:</p>
-                                <div class="flex flex-col gap-2">
-                                    <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank"
-                                        class="hover:text-dracula-green">-> linkedin.com/in/vamsipenmetsa</a>
-                                    <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank"
-                                        class="hover:text-dracula-green">-> Join my LinkedIn Group (15K+ members)</a>
-                                    <a href="https://github.com/vamsipenmetsa" target="_blank"
-                                        class="hover:text-dracula-green">-> github.com/vamsipenmetsa</a>
-                                    <a href="https://medium.com/@vamsipenmetsa" target="_blank"
-                                        class="hover:text-dracula-green">-> Read my DevOps Articles on Medium</a>
-                                    <a href="https://x.com/vamsi_penmetsa" target="_blank"
-                                        class="hover:text-dracula-green">-> x.com/vamsi_penmetsa</a>
-                                </div>
-                                <p class="mt-4 text-dracula-comment">// Based in Warsaw, Poland</p>
-                            </div>
-                        </div>
-
-                        <footer
-                            class="mt-12 text-center text-dracula-comment text-sm border-t border-dracula-comment pt-4">
-                            <p>&copy; 2025 Vamsi Penmetsa. Built with <span class="text-dracula-red">&lt;3</span> and
-                                Terminal.</p>
-                        </footer>
-                    </section>
-
-                    <!-- Active Command Line (Bottom) -->
-                    <div class="command-line mt-12">
-                        <span class="prompt">vamsi@portfolio</span>:<span class="path">~</span>$ <span
-                            class="cursor"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <footer class="text-center text-pencil-light py-8 border-t-2 border-pencil border-dashed">
+                <p>&copy; 2025 Vamsi Penmetsa. Hand-crafted with <span class="text-red-500">♥</span></p>
+            </footer>
+        </main>
     </div>
     <script type="module" src="./src/main.js"></script>
 </body>
